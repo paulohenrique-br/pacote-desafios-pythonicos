@@ -2,7 +2,7 @@
 01. donuts
 
 Dado um contador inteiro do numero de donuts, retorne uma string
-com o formato 'Number of donuts: <count>' onde <count> é o numero
+com o formato  onde <count> é o numero
 recebido. Entretanto, se o contador for 10 ou mais, use a palavra 'many'
 ao invés do contador.
 Exemplo: donuts(5) retorna 'Number of donuts: 5'
@@ -10,9 +10,10 @@ e donuts(23) retorna 'Number of donuts: many'
 """
 
 def donuts(count):
-    # +++ SUA SOLUÇÃO +++
-    return
-
+    if count <=9:
+        return f'Number of donuts: {count}'
+    else:
+        return 'Number of donuts: many'
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
